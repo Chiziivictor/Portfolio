@@ -1126,4 +1126,10 @@ img {
   }
 }
 
+
+@media screen and (min-height: 600px) {
+  .section{
+    margin-bottom: 300%;
+  }
+}
 /**/
