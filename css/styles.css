@@ -5,20 +5,12 @@
 :root {
   --header-height: 3.5rem;
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
   --first-hue: 221;
   --sat: 33%;
   --lig: 25%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 21%);
-  /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 21%); /* -4% */
   /* --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -31,6 +23,7 @@
   --body-color: hsl(var(--second-hue), 100%, 99%);
   /* --body-color: hsl(185, 29%, 92%); */
   --container-color: #fff;
+
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
@@ -42,14 +35,17 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
+
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semibold: 600;
+
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
+
 
 /* Responsive typography */
 @media screen and (min-width: 968px) {
@@ -63,6 +59,8 @@
     --smaller-font-size: .813rem;
   }
 }
+
+
 
 /*=============== BASE ===============*/
 * {
@@ -114,12 +112,9 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
-/*==========
-    Color changes in some parts of
-    the website, in light theme
-==========*/
+
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 100%;
@@ -238,6 +233,7 @@ img {
   background-color: var(--first-color);
   color: var(--title-color);
 }
+
 
 /*=============== HOME ===============*/
 .home__container {
@@ -593,6 +589,8 @@ img {
   visibility: visible;
 }
 
+
+
 /*=============== WORK ===============*/
 .work__container {
   padding-top: 1rem;
@@ -656,8 +654,8 @@ img {
   color: var(--title-color);
 }
 
-/*=============== TESTIMONIAL ===============*/
-/* Swiper class */
+
+
 /*=============== CONTACT ===============*/
 .contact__container {
   row-gap: 3rem;
@@ -766,6 +764,8 @@ img {
   resize: none;
 }
 
+
+
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--first-color);
@@ -815,12 +815,7 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar {
-  width: .6rem;
-  border-radius: .5rem;
-  background-color: var((--second-hue), 8%, 38%);
-}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -876,6 +871,8 @@ img {
     column-gap: .25rem;
   }
 }
+
+
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -950,6 +947,8 @@ img {
   padding-right: 5%;
 }
 
+
+
 @media screen and (min-width: 750px) {
   .home__container {
     display: grid;
@@ -957,8 +956,9 @@ img {
     grid-template-columns: min-content max-content;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 8rem;
     padding-right: 4rem;
+    margin-top: 1.8rem;
   }
 
   .home__data {
@@ -981,6 +981,9 @@ img {
 .section__title {
   margin-bottom: 5rem;
 }
+
+
+
 
 /* For large devices */
 @media screen and (min-width: 900px) {
@@ -1021,11 +1024,10 @@ img {
     position: static;
     background-color: var(--body-color);
     width: 40%;
-    border-radius: 4rem;
     padding: 1rem 2.25rem;
     backdrop-filter: blur(10px);
     justify-items: center;
-    padding-right: 8%;
+    padding-right: 6%;
   }
 
   .cv {
