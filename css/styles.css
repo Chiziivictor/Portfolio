@@ -819,7 +819,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 335px) {
   .nav__menu {
     padding: 1rem 1.5rem;
   }
@@ -1129,8 +1129,7 @@ img {
 
 @media screen and (min-height: 1000px) {
   .section{
-    margin-bottom: 25%;
-    margin-top: 25%;
+    margin-bottom: 50%;
   }
 }
 /**/
